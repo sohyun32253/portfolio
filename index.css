@@ -27,6 +27,7 @@ p{
 
 img{
     border: none;
+    display: inline-block;
 }
 
 address{
@@ -55,8 +56,6 @@ body {
 .container {
     width:100%;height:100%;
 }
-
-.container{background-color: #FFF9EF;}
 
 
 
@@ -145,22 +144,24 @@ body {
     opacity: 0;
     transform: translateY(100px);
     transition: all 1s;
+    position: relative;
 }
 
 .name{
     font-size: 30px;
     color: #0541d7;
-    position: relative;
+    position: absolute;
     bottom: -650px;
+    left: 0;
     height: 0;
 }
 
 .year{
     font-size: 30px;
     color: #0541d7;
-    right: -1200px;
+    right: 0;
     bottom: -650px;
-    position: relative;
+    position: absolute;
     height: 0;
 }
 
@@ -365,7 +366,7 @@ body {
 /* swiper */
 
 .swiper {
-    width: 546px;
+    max-width: 546px;
     height: 307px;
     background: #cacaca;
     margin-right: 60px;
@@ -378,7 +379,7 @@ body {
   }
 
   .swiper-slide {
-    width: 546px;
+    max-width: 546px;
     height: 307px;
     text-align: center;
     font-size: 18px;
@@ -433,27 +434,41 @@ body {
     border: 2px dotted #819CE2;
 }
 
-.portfolio_space_01 .process_01>span{
+.portfolio_space_01 .space_process .number{
+    color: #819CE2;
+}
+
+.process_txt{
+    color: #666666;
+}
+
+.number{
     position: absolute;
-    top: 47px;
+    top: 15px;
+    left: 47px;
+}
+
+.portfolio_space_01 .process_01>.process_txt{
+    position: absolute;
+    top: 50px;
     left: 20px;
 }
 
-.portfolio_space_01 .process_02>span{
+.portfolio_space_01 .process_02>.process_txt{
     position: absolute;
-    top: 35px;
+    top: 40px;
     left: 0;
 }
 
-.portfolio_space_01 .process_03>span{
+.portfolio_space_01 .process_03>.process_txt{
     position: absolute;
-    top: 47px;
+    top: 50px;
     left: 7px;
 }
 
-.portfolio_space_01 .process_04>span{
+.portfolio_space_01 .process_04>.process_txt{
     position: absolute;
-    top: 35px;
+    top: 40px;
     left:0;
 }
 
@@ -482,7 +497,7 @@ body {
 }
 
 .photo_wrap{
-    width: 1300px;
+    max-width: 1300px;
     margin: 60px auto;
     display: flex;
     justify-content: space-between;
@@ -492,7 +507,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
+    display: inline-block;
 }
 
 .portfolio_space_01_detail .photo_01{
@@ -511,6 +526,7 @@ body {
     width: 329px;
     height: 336px;
     background: #d8d8d8;
+    margin-bottom: 40px;
 }
 
 /* portfolio space 02 */
@@ -519,33 +535,37 @@ body {
     border: 2px dotted #FA859B;
 }
 
-.portfolio_space_02 .process_01>span{
+.portfolio_space_02 .space_process .number{
+    color: #FA859B;
+}
+
+.portfolio_space_02 .process_01>.process_txt{
     position: absolute;
-    top: 37px;
+    top: 40px;
     left: 12px;
 }
 
-.portfolio_space_02 .process_02>span{
+.portfolio_space_02 .process_02>.process_txt{
     position: absolute;
-    top: 37px;
+    top: 40px;
     left: 12px;
 }
 
-.portfolio_space_02 .process_03>span{
+.portfolio_space_02 .process_03>.process_txt{
     position: absolute;
-    top: 37px;
+    top: 40px;
     left: 0;
 }
 
-.portfolio_space_02 .process_04>span{
+.portfolio_space_02 .process_04>.process_txt{
     position: absolute;
-    top: 37px;
+    top: 40px;
     left:27px;
 }
 
-.portfolio_space_02 .process_05>span{
+.portfolio_space_02 .process_05>.process_txt{
     position: absolute;
-    top: 45px;
+    top: 50px;
     left:12px;
 }
 
@@ -627,27 +647,31 @@ body {
     border: 2px dotted #C95368;
 }
 
-.portfolio_space_03 .process_01>span{
+.portfolio_space_03 .space_process .number{
+    color: #C95368;
+}
+
+.portfolio_space_03 .process_01>.process_txt{
     position: absolute;
-    top: 35px;
+    top: 40px;
     left: 20px;
 }
 
-.portfolio_space_03 .process_02>span{
+.portfolio_space_03 .process_02>.process_txt{
     position: absolute;
-    top: 35px;
+    top: 40px;
     left: 15px;
 }
 
-.portfolio_space_03 .process_03>span{
+.portfolio_space_03 .process_03>.process_txt{
     position: absolute;
-    top: 47px;
+    top: 50px;
     left: 7px;
 }
 
-.portfolio_space_03 .process_04>span{
+.portfolio_space_03 .process_04>.process_txt{
     position: absolute;
-    top: 35px;
+    top: 40px;
     left: 12px;
 }
 
@@ -676,7 +700,7 @@ body {
 }
 
 .photo_wrap{
-    width: 1300px;
+    max-width: 1300px;
     margin: 60px auto;
     display: flex;
     justify-content: space-between;
@@ -694,33 +718,37 @@ body {
     border: 2px dotted #869DD6;
 }
 
-.portfolio_space_04 .process_01>span{
+.portfolio_space_04 .space_process .number{
+    color: #869DD6;
+}
+
+.portfolio_space_04 .process_01>.process_txt{
     position: absolute;
-    top: 37px;
+    top: 40px;
     left: 7px;
 }
 
-.portfolio_space_04 .process_02>span{
+.portfolio_space_04 .process_02>.process_txt{
     position: absolute;
-    top: 37px;
+    top: 40px;
     left: 15px;
 }
 
-.portfolio_space_04 .process_03>span{
+.portfolio_space_04 .process_03>.process_txt{
     position: absolute;
-    top: 37px;
+    top: 40px;
     left: 20px;
 }
 
-.portfolio_space_04 .process_04>span{
+.portfolio_space_04 .process_04>.process_txt{
     position: absolute;
-    top: 37px;
+    top: 40px;
     left:20px;
 }
 
-.portfolio_space_04 .process_05>span{
+.portfolio_space_04 .process_05>.process_txt{
     position: absolute;
-    top: 37px;
+    top: 40px;
     left:21px;
 }
 
@@ -760,7 +788,7 @@ body {
 }
 
 .web_site_cont{
-    width: 1300px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 160px 0 0;
     box-sizing: border-box;
@@ -954,19 +982,19 @@ body {
 }
 
 .address_cont{
-    width: 1300px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 160px 0 0;
     box-sizing: border-box;
 }
 
 .address_box{
-    width: 1300px;
+    max-width: 1300px;
     border: 2px solid #405da5;
 }
 
 .address_box>div:first-child{
-    width: 1300px;
+    max-width: 1300px;
     background: #405da5;
     height: 60px;
     display: flex;
@@ -998,147 +1026,270 @@ body {
     .wrap {
     position: relative;
     width: 100%;
-    height: 100vh; /* 한 화면을 다 차지 */
+    height: 100%; /* 한 화면을 다 차지 */
     overflow-x: hidden;
     overflow-y: auto; /* 기본적으로 스크롤 허용 */
 }
 
 .container {
     margin-bottom: 200px;
-    height: 100vh; /* 각 페이지가 한 화면을 차지하도록 설정 */
+    height: auto; /* 각 페이지가 한 화면을 차지하도록 설정 */
 }
 
-    .mypage_cont h1{
-        font-size: 100px;
+.mypage_wrap{
+    height: 700px;
+}
+
+.mypage_cont{
+    max-width: 700px;
+}
+
+.mypage_cont h1{
+    font-size: 100px;
+}
+.opacity_10{
+    position: absolute;
+    top: 119px;
+    left:10%;
+}
+
+.opacity_30{
+    position: absolute;
+    top: 185px;
+    left: 27%;
+}
+
+.opacity_50{
+    position: absolute;
+    top: 251px;
+    left: 10%;
+}
+
+.opacity_70{
+    position: absolute;
+    top: 317px;
+    left: 27%;
+}
+
+.opacity_100{
+    position: absolute;
+    top: 383px;
+    left: 10%;
+}
+
+.bg_01{
+    display: none;
+}
+
+.bg_02{
+    display: none;
+}
+
+.gnb{
+    display: none;
+}
+.pager{
+    display: none;
+}
+
+.profile{
+    display: block;
+}
+
+.profile_cont{
+    display: block;
+    text-align: center;
+    height: 100%;
+    padding: 0;
+}
+
+.profile_right{
+    margin-bottom: 100px;
+}
+
+.profile_left{
+    margin-right: 0;
+}
+
+.profile_01{
+    margin-right: 0;
+    margin-bottom: 40px;
+}
+
+.character{
+    width: auto;
+    margin-bottom: 100px;
+}
+
+.first_box{
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.education{
+    margin-bottom: 80px;
+}
+
+.license{
+    margin-bottom: 80px;
+}
+
+.space_cont{
+    max-width: 1300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.swiper {
+    margin-bottom: 40px;
     }
-    .opacity_10{
-        position: absolute;
-        top: 119px;
-        left:10%;
-        color: #E6E7ED;
-    }
+
     
-    .opacity_30{
-        position: absolute;
-        top: 185px;
-        left: 27%;
-        color: #B4C2E8;
-        
-    }
+.portfolio_space{
+    padding:  0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.portfolio_space .space_txt{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.space_process{
+    margin: auto;
+}
+
+.photo_wrap{
+    display: block;
+}
+
+.photo_wrap>div{
+    margin: 0 auto 40px;
+}
+
+.profile_cont{
+    opacity: 1;
+}
+
+.portfolio_space_01_detail .photo_02{
+    width: 594px;
+    height: 594px;
+}
+
+.portfolio_space_01_detail .photo_03{
+    width: 594px;
+    height: 594px;
+}
+
+.portfolio_space_02_detail .photo_01{
+    width: 594px;
+    height: 462px;
+}
+
+.portfolio_space_02_detail .photo_02{
+    width: 594px;
+    height: 817px;
+}
+
+.photo_bottom{
+    display: block !important;
+    margin-bottom: 40px;
+}
+
+.portfolio_space_02_detail .photo_03{
+    width: 594px;
+    height: 578px;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.portfolio_space_02_detail .photo_03 .photo_top{
+    width: 594px;
+    height: 278px;
+    margin-bottom: 40px;
+}
+
+.portfolio_space_02_detail .photo_03 .photo_left{
+    width: 594px;
+    height: 594px;
+    margin-bottom: 40px;
+}
+
+.portfolio_space_02_detail .photo_03 .photo_right{
+    width: 594px;
+    height: 594px;
+}
+
+.portfolio_space_02_detail .photo_04{
+    width: 594px;
+    height: 895px;
+    margin-top: 40px;
+}
+
+.portfolio_space_03_detail .photo_wrap>div{
+    width: 594px;
+    height: 817px;
+}
+
+.portfolio_space_04_detail .photo_wrap>div{
+    width: 594px;
+    height: 817px;
+}
+
+.site_wrap{
+    display: block;
     
-    .opacity_50{
-        position: absolute;
-        top: 251px;
-        left: 10%;
-        color: #819CE2;
-    }
-    
-    .opacity_70{
-        position: absolute;
-        top: 317px;
-        left: 27%;
-        color: #5078DE;
-    }
-    
-    .opacity_100{
-        position: absolute;
-        top: 383px;
-        left: 10%;
-        color: #0541d7;
-    }
-    .bg_01{
-        display: none;
-    }
-    
-    .bg_02{
-        display: none;
-    }
+}
 
-    .name{
-        font-size: 30px;
-        color: #0541d7;
-        position: relative;
-        bottom:0;
-        height: 0;
-    }
-    
-    .year{
-        font-size: 30px;
-        color: #0541d7;
-        bottom: 0;
-        position: relative;
-        height: 0;
-    }
+.site_wrap>div{
+    margin: 0 auto 40px;
 
-    .pager{
-       display: none;
-    }
-    .profile_cont{
-        display: block;
-        text-align: center;
-        height: 100%;
-    }
+}
 
-    .profile_right{
-        margin-bottom: 100px;
-    }
+.web_site_cont{
+    padding: 0;
+}
 
-    .profile_left{
-        margin-right: 0;
-    }
-
-    .character{
-        width: auto;
-        margin-bottom: 100px;
-    }
-
-    .first_box{
-        padding: 700px 0 60px;
-        box-sizing: border-box;
-        text-align: center;
-    }
-
-    .education{
-        margin-bottom: 80px;
-    }
-    
-    .license{
-        margin-bottom: 80px;
-    }
-
-    .space_cont{
-        max-width: 1300px;
-        display: block;
-        margin: 0 auto;
-    }
-
-    .swiper {
-        margin-bottom: 40px;
-      }
-
-    .portfolio_space .space_txt{
-        text-align: center;
-        margin-bottom: 100px;
-    }
-  }
+.address_cont{
+    padding: 0;
+    max-width: 700px;
+}
+}
 
 /* mobile ver */
 @media (min-width: 375px) and (max-width:767px){
+    p{
+        font-size: 16px;
+        line-height: 1.75;
+        color: #444444;
+    }
+    
     .wrap {
         position: relative;
         width: 100%;
-        height: 100vh; /* 한 화면을 다 차지 */
+        height: 100%; /* 한 화면을 다 차지 */
         overflow-x: hidden;
         overflow-y: auto; /* 기본적으로 스크롤 허용 */
     }
     
     .container {
-        margin-bottom: 200px;
-        height: 100vh; /* 각 페이지가 한 화면을 차지하도록 설정 */
+        margin-bottom: 0;
+        height: auto; /* 각 페이지가 한 화면을 차지하도록 설정 */
+    }
+
+    .mypage_wrap{
+        height: 700px;
+    }
+
+    .mypage_cont{
+        max-width: 300px;
+        margin: 0 auto;
     }
    
     .mypage_cont h1{
-        font-size: 70px;
+        font-size: 50px;
+        text-align: center;
     }
     .opacity_10{
         left:10%;
@@ -1168,50 +1319,40 @@ body {
     }
 
     .name{
-        bottom:0;
+        font-size: 30px;
+        color: #0541d7;
+        position: absolute;
+        bottom: -550px;
+        left: 45px;
         height: 0;
     }
     
     .year{
-        bottom: 0;
+        font-size: 30px;
+        color: #0541d7;
+        right: 0;
+        bottom: -650px;
+        left: 20px;
+        position: absolute;
         height: 0;
+    }
+
+    .gnb{
+        display: none;
     }
 
     .pager{
         display: none;
      }
 
-    .gnb{
-        background: #FFF9EF;
-        width: 100%;
-        height: 80px;
-        border-bottom: 2px solid #A6BCED;
-        box-sizing: border-box;
-        font-size: 24px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 10;
-        color: #A6BCED;
-        transition: all 0.5s;
-       
-    }
     
-    .gnb ul{
-       
-        display: flex;
-        height: 80px;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .gnb li{
-        margin-right: 20px;
-        cursor: default;
-    }
-
     .profile{
         display: block;
+    }
+
+    .profile_01{
+        margin-right: 0;
+        margin-bottom: 40px;
     }
 
     .profile_cont{
@@ -1228,9 +1369,25 @@ body {
         margin-right: 0;
     }
 
-    .character{
-        width: auto;
+    .space_right{
         margin-bottom: 100px;
+        max-width: 330px;
+        margin: 0 auto;
+    }
+
+    .character{
+        max-width: 330px;
+        margin-bottom: 100px;
+    }
+
+    .character h2{
+        font-size: 20px;
+    }
+
+    .character span{
+        border-bottom: 3px solid #9DB1E2;
+        margin-right: 10px;
+        font-size: 16px;
     }
 
     .first_box{
@@ -1261,6 +1418,201 @@ body {
         margin-right: 0;
         margin-bottom: 20px;
     }
+
+    .profile_cont{
+        opacity: 1;
+     }
+
+    .space_cont{
+        max-width: 1300px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .swiper {
+        margin-bottom: 40px;
+      }
+
+    .portfolio_space h1{
+        font-size: 32px;
+        color: #0541d7;
+    }
+      
+    .portfolio_space{
+        padding:  0;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .portfolio_space .space_txt{
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .space_process{
+        margin: auto;
+    }
+    .space_process{
+        display: block;
+        margin: 58px auto;
+        width: 117px;
+        margin: 0 auto;
+    }
+
+    .space_process>div{
+        width: 117px;
+        height: 117px;
+        margin-bottom: 40px;
+    }
+
+    .space_process img{
+        display: none;
+    }
+
+    .photo_wrap{
+        display: block;
+    }
+
+    .photo_wrap>div{
+        margin: 0 auto 40px;
+    }
+
+    .portfolio_space_01_detail .photo_01{
+        width: 300px;
+        height: 180px;
+    }
+
+    .portfolio_space_01_detail .photo_02{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .portfolio_space_01_detail .photo_03{
+        width: 300px;
+        height: 300px;
+    }
+
+    .portfolio_space_02_detail .photo_01{
+        width: 300px;
+        height: 236px;
+        background: #d8d8d8;
+    }
+    
+    .portfolio_space_02_detail .photo_02{
+        width: 300px;
+        height: 416px;
+        background: #d8d8d8;
+    }
+    
+    .portfolio_space_02_detail .photo_03{
+        width: 300px;
+        height: 296px;
+      
+    }
+    
+    .portfolio_space_02_detail .photo_03 .photo_top{
+        width: 300px;
+        height: 180px;
+        background: #d8d8d8;
+        margin-bottom: 20px;
+    }
+    
+    .portfolio_space_02_detail .photo_03 .photo_bottom{
+        display: block;
+    }
+    
+    .portfolio_space_02_detail .photo_03 .photo_left{
+        width: 300px;
+        height: 300px;
+        background: #d8d8d8;
+    }
+    
+    .portfolio_space_02_detail .photo_03 .photo_right{
+        width: 300px;
+        height: 300px;
+        background: #d8d8d8;
+    }
+    
+    .portfolio_space_02_detail .photo_04{
+        width: 300px;
+        height: 436px;
+        background: #d8d8d8;
+    }
+
+    .portfolio_space_03_detail .photo_wrap>div{
+        width: 300px;
+        height: 413px;
+    }
+    
+    .portfolio_space_04_detail .photo_wrap>div{
+        width: 300px;
+        height: 413px;
+    }
+    
+
+    .profile_cont{
+       opacity: 1;
+    }
+
+    .site_wrap{
+        display: block;
+    }
+
+    .site_wrap>div{
+        margin: 0 auto 40px;
+    }
+
+    .web_site_cont{
+       padding: 0;
+    }
+    .web_site_cont h1{
+        font-size: 32px;
+    }
+
+    .site_wrap>div{
+        width: 300px;
+        height: 200px;
+    }
+
+    .maeil{
+        width: 140px;
+        position: absolute;
+        bottom: 60px;
+        left: 85px;
+    }
+
+    .saltrain{
+        width: 220px;
+        position: absolute;
+        bottom: 70px;
+        left: 40px;
+    }
+
+    .gongcha{
+        width: 80px;
+        position: absolute;
+        bottom: 35px;
+        left: 115px;
+    }
+
+    .address_cont{
+       padding: 40px 0;
+       max-width: 300px;
+    }
+
+    .fz{
+        font-size: 40px !important;
+        color: #0541d7 !important;
+    }
+
+    .address_txt span{
+        color: #666666;
+        font-style: italic;
+        text-decoration:underline;
+        font-size: 20px;
+    }
+
+
   }
   
   
