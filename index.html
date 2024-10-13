@@ -39,25 +39,15 @@
              </div>
         </div>
 
+
         <div class="pager">
-            <button>
-                <svg height="15" width="15" xmlns="http://www.w3.org/2000/svg">
-                <circle r="7" cx="7" cy="7" fill="#D9D9D9" /></svg>
+            <button data-target=".profile_cont">
             </button>
 
-            <button>
-                <svg height="15" width="15" xmlns="http://www.w3.org/2000/svg">
-                <circle r="7" cx="7" cy="7" fill="#D9D9D9" /></svg>
+            <button data-target=".portfolio_cont">
             </button>
 
-            <button>
-                <svg height="15" width="15" xmlns="http://www.w3.org/2000/svg">
-                <circle r="7" cx="7" cy="7" fill="#D9D9D9" /></svg>
-            </button>
-
-            <button>
-                <svg height="15" width="15" xmlns="http://www.w3.org/2000/svg">
-                <circle r="7" cx="7" cy="7" fill="#D9D9D9" /></svg>
+            <button data-target=".address_cont">
             </button>
         </div>
 
@@ -70,7 +60,7 @@
                 <li class="gnb_03">ADDRESS</li>
             </ul>
         </div>
-        </div>
+        
 
         <div class="container">
             <div class="profile_cont">
@@ -116,20 +106,20 @@
                     <div class="skills">
                         <h2>SKILLS</h2>
                             <div class="skills_top">
+                                <p><img src="images/skills_07.png" alt="html"></p>
+                                <p><img src="images/skills_08.png" alt="css"></p>
+                                <p><img src="images/skills_09.png" alt="javascript"></p>
+                                <p><img src="images/skills_10.png" alt="vue"></p>
+                                <p><img src="images/skills_11.png" alt="react"></p>
+                            </div>
+
+                            <div class="skills_bottom">
                                 <p><img src="images/skills_01.png" alt="photoshop"></p>
                                 <p><img src="images/skills_02.png" alt="illustration"></p>
                                 <p><img src="images/skills_03.png" alt="premere pro"></p>
                                 <p><img src="images/skills_04.png" alt="figma"></p>
                                 <p><img src="images/skills_05.png" alt="sketch up"></p>
                                 <p><img src="images/skills_06.png" alt="auto cad"></p>
-                            </div>
-                            
-                            <div class="skills_bottom">
-                                <p><img src="images/skills_07.png" alt="html"></p>
-                                <p><img src="images/skills_08.png" alt="css"></p>
-                                <p><img src="images/skills_09.png" alt="javascript"></p>
-                                <p><img src="images/skills_10.png" alt="vue"></p>
-                                <p><img src="images/skills_11.png" alt="react"></p>
                             </div>
                         </div>
                 </div>
@@ -138,46 +128,46 @@
        
 
 
-            <div class="container portfolio">
-                <div class="portfolio_cont">
-                <h1>VISIT THE WEBSITE !</h1>
-                <div class="site_wrap">
-                    <div class="site_cont_01">
-                        <div><img src="./images/open_site.svg" alt="" class="open_site"></div>
-                        <img src="images/maeil.png" alt="매일 바로가기" class="maeil">
-                        <div class="dark_filter"></div>
-                            <div class="introduce_cont">
-                                <h2>1. 매일유업 (team project)</h2>
-                                <p>기본 html,css,js를 활용한 웹사이트 리뉴얼</p>
-                                <p>담당 파트: 메인페이지(1~4) <br>서브페이지: IR,PR,login</p>
-                                <p><button class="site_to_go visit_maeil"><a href="https://sohyun32253.github.io/maeil_project/">사이트 바로가기 <img src="./images/to_go.svg"></a></button></p>
-                            </div>
-                    </div>
-                    <div class="site_cont_02">
-                        <div><img src="./images/open_site.svg" alt="" class="open_site"></div>
-                        <img src="images/saltrain.png" alt="솔트레인 바로가기" class="saltrain">
-                        <div class="dark_filter"></div>
+        <div class="container">
+            <div class="portfolio_cont">
+            <h1>VISIT THE WEBSITE !</h1>
+            <div class="site_wrap">
+                <div class="site_cont_01">
+                    <div><img src="./images/open_site.svg" alt="" class="open_site"></div>
+                    <img src="images/maeil.png" alt="매일 바로가기" class="maeil">
+                    <div class="dark_filter"></div>
                         <div class="introduce_cont">
-                            <h2>2. 솔트레인 (team project)</h2>
-                            <p>vue.js와 vite를 활용한 웹사이트 리뉴얼</p>
-                            <p>담당 파트: 메인페이지(반응형 header,footer) <br>서브페이지: about,login</p>
-                            <p><button class="site_to_go visit_saltrain"><a href="https://saltrain-f8238.web.app/">사이트 바로가기 <img src="./images/to_go.svg"></a></button></p>
+                            <h2>1. 매일유업 (team project)</h2>
+                            <p>기본 html,css,js를 활용한 웹사이트 리뉴얼</p>
+                            <p>담당 파트: 메인페이지(1~4) <br>서브페이지: IR,PR,login</p>
+                            <p><button class="site_to_go visit_maeil"><a href="https://sohyun32253.github.io/maeil_project/">사이트 바로가기 <img src="./images/to_go.svg"></a></button></p>
                         </div>
+                </div>
+                <div class="site_cont_02">
+                    <div><img src="./images/open_site.svg" alt="" class="open_site"></div>
+                    <img src="images/saltrain.png" alt="솔트레인 바로가기" class="saltrain">
+                    <div class="dark_filter"></div>
+                    <div class="introduce_cont">
+                        <h2>2. 솔트레인 (team project)</h2>
+                        <p>vue.js와 vite를 활용한 웹사이트 리뉴얼</p>
+                        <p>담당 파트: 메인페이지(반응형 header,footer) <br>서브페이지: about,login</p>
+                        <p><button class="site_to_go visit_saltrain"><a href="https://saltrain-f8238.web.app/">사이트 바로가기 <img src="./images/to_go.svg"></a></button></p>
                     </div>
-                    <div class="site_cont_03">
-                        <div><img src="./images/open_site.svg" alt="" class="open_site"></div>
-                       <img src="images/gongcha.png" alt="공차 바로가기" class="gongcha">
-                        <div class="dark_filter"></div>
-                        <div class="introduce_cont">
-                            <h2>3. 공차 (solo project)</h2>
-                            <p>react.js와 firebase를 활용한 웹사이트 리뉴얼</p>
-                            <p>구현 페이지: 메인페이지, 음료, 로그인, 마이페이지</p>
-                            <p><button class="site_to_go visit_gongcha"><a href="https://sohyun32253.github.io/Gongcha/">사이트 바로가기 <img src="./images/to_go.svg"></a></button></p>
-                        </div>
+                </div>
+                <div class="site_cont_03">
+                    <div><img src="./images/open_site.svg" alt="" class="open_site"></div>
+                    <img src="images/gongcha.png" alt="공차 바로가기" class="gongcha">
+                    <div class="dark_filter"></div>
+                    <div class="introduce_cont">
+                        <h2>3. 공차 (solo project)</h2>
+                        <p>react.js와 firebase를 활용한 웹사이트 리뉴얼</p>
+                        <p>구현 페이지: 메인페이지, 음료, 로그인, 마이페이지</p>
+                        <p><button class="site_to_go visit_gongcha"><a href="https://sohyun32253.github.io/Gongcha/">사이트 바로가기 <img src="./images/to_go.svg"></a></button></p>
                     </div>
                 </div>
             </div>
             </div>
+        </div>
         
     
 
@@ -197,7 +187,10 @@
         </div>
     </div>
     <script type="text/javascript">
-        
+
+    window.onload = function() {
+        setupIntersectionObserver();  // 모든 요소가 렌더링된 후 실행
+    };
         // IntersectionObserver 설정 함수
         let goalObserver; // setupIntersectionObserver 함수 외부에 선언
     
@@ -209,42 +202,107 @@
                 port = chrome.runtime.connect();
             }
         });
-    
+
+        
+
         function setupIntersectionObserver() {
-            // goalObserver에 값 할당
-            goalObserver = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    const h1Elements = entry.target.querySelectorAll('.h1_wrap');
-                    const pElements = entry.target.querySelectorAll('.p_wrap');
-                    const gnbActive01 = document.querySelector('.gnb_01');
-                    const profile_cont = document.querySelector('.profile_cont');
-                    const gnbActive02 = document.querySelector('.gnb_02');
-                    const site_wrap = document.querySelector('.site_wrap');
-                    const gnbActive03 = document.querySelector('.gnb_03');
-    
-                    if (entry.isIntersecting) {
-                        // 각 컨테이너에 맞는 GNB 항목 활성화
-                        if (entry.target.classList.contains('mypage_cont')) {
-                            h1Elements.forEach((h1) => h1.classList.add('slide_down'));
-                            pElements.forEach((p) => p.classList.add('slide_up'));
-                        } else if (entry.target.classList.contains('profile_cont')) {
-                            gnbActive01.classList.add('active');
-                            profile_cont.classList.add('fade_in');
-                        } else if (entry.target.classList.contains('portfolio_cont')) {
-                            gnbActive02.classList.add('active');
-                            site_wrap.classList.add('fade_down');
-                        } else if (entry.target.classList.contains('address_cont')) {
-                            gnbActive03.classList.add('active');
-                        }
-                    } 
+    goalObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            const h1Elements = entry.target.querySelectorAll('.h1_wrap');
+            const pElements = entry.target.querySelectorAll('.p_wrap');
+            const profile_to_go = document.querySelector('.profile_to_go'); // document.querySelector로 수정
+            const portfolio_to_go = document.querySelector('.portfolio_to_go'); // document.querySelector로 수정
+            const address_to_go = document.querySelector('.address_to_go'); // document.querySelector로 수정
+            const gnbActive01 = document.querySelector('.gnb_01');
+            const profile_cont = document.querySelector('.profile_cont');
+            const gnbActive02 = document.querySelector('.gnb_02');
+            const portfolio_cont = document.querySelector('.portfolio_cont');
+            const site_wrap = document.querySelector('.site_wrap');
+            const gnbActive03 = document.querySelector('.gnb_03');
+            const address_cont = document.querySelector('.address_cont');
+
+            if (entry.isIntersecting) {
+                // 모든 GNB 항목에서 active 클래스 제거
+                document.querySelectorAll('.gnb li').forEach((gnbItem) => {
+                    gnbItem.classList.remove('active');
                 });
-            }, { threshold: 0.4 });
-            
+
+                // 각 컨테이너에 맞는 GNB 항목 활성화
+                if (entry.target.classList.contains('mypage_cont')) {
+                    h1Elements.forEach((h1) => h1.classList.add('slide_down'));
+                    pElements.forEach((p) => p.classList.add('slide_up'));
+                } else if (entry.target.classList.contains('profile_cont')) {
+                    // 버튼이 존재하는지 확인 후 active 클래스 추가
+                    if (profile_to_go) {
+                        document.querySelectorAll('.profile_to_go, .portfolio_to_go, .address_to_go').forEach(btn => {
+                            btn.classList.remove('button_active');
+                        });
+                        profile_to_go.classList.add('button_active');
+                    }
+                    if (gnbActive01) {
+                        gnbActive01.classList.add('active');
+                    }
+                    if (profile_cont) {
+                        profile_cont.classList.add('fade_in');
+                    }
+                } else if (entry.target.classList.contains('portfolio_cont')) {
+                    if (portfolio_to_go) {
+                        document.querySelectorAll('.profile_to_go, .portfolio_to_go, .address_to_go').forEach(btn => {
+                            btn.classList.remove('button_active');
+                        });
+                        portfolio_to_go.classList.add('button_active');
+                    }
+                    if (gnbActive02) {
+                        gnbActive02.classList.add('active');
+                    }
+                    if (site_wrap) {
+                        site_wrap.classList.add('fade_down');
+                    }
+                } else if (entry.target.classList.contains('address_cont')) {
+                    if (address_to_go) {
+                        document.querySelectorAll('.profile_to_go, .portfolio_to_go, .address_to_go').forEach(btn => {
+                            btn.classList.remove('button_active');
+                        });
+                        address_to_go.classList.add('button_active');
+                    }
+                    if (gnbActive03) {
+                        gnbActive03.classList.add('active');
+                    }
+                }
+            }
+        });
+    }, { threshold: 0.1 });
+
+    // 목표 요소 관찰
+    const elementsToObserve = document.querySelectorAll('.mypage_cont, .profile_cont, .portfolio_cont, .address_cont');
+    elementsToObserve.forEach((element) => goalObserver.observe(element));
+}
+
+// 페이지가 로드된 후 실행
+document.addEventListener("DOMContentLoaded", () => {
+    setupButtonScroll(); // 버튼 스크롤 기능 설정
+});
+
+// 버튼 스크롤 기능 설정
+function setupButtonScroll() {
+    const buttons = document.querySelectorAll('.pager button');
+
+    // 버튼 클릭 이벤트 리스너 추가
+    for (const button of buttons) {
+        button.addEventListener('click', function () {
+            const targetElement = document.querySelector(this.dataset.target);
+
+            // 타겟 요소가 존재할 경우 스크롤 수행
+            if (targetElement) {
+                const scrollPosition = targetElement.offsetTop;
+
+                // scroll을 offsetTop으로 이동시킴
+                window.scrollTo({ top: scrollPosition, behavior: 'smooth' });
+            }
+        });
+    }
+}
     
-            // 목표 요소 관찰
-            const elementsToObserve = document.querySelectorAll('.mypage_cont, .profile_cont, .portfolio_cont, .address_cont');
-            elementsToObserve.forEach((element) => goalObserver.observe(element));
-        }
     
         // 초기 로드 시와 페이지 전환 시 스크립트 실행
         document.addEventListener("DOMContentLoaded", function () {
@@ -254,25 +312,6 @@
         // 페이지 전환 시 IntersectionObserver 재설정
         window.addEventListener('popstate', function () {
             setupIntersectionObserver();
-        });
-
-        // swiper
-        var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 0,
-        loop: true,
-        centeredSlides: true,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
         });
             
   
@@ -322,8 +361,9 @@
             }
         }, { passive: false });
 
+        /*
         document.addEventListener('DOMContentLoaded', function() {
-        const button = document.getElementsByClassName('dark_fillter');
+        const button = document.getElementsByClassName('dark_filter');
 
         // 터치 디바이스 여부 확인
         const isTouchDevice = 'ontouchstart' in document.documentElement;
@@ -334,7 +374,7 @@
             button.classList.toggle('dark_filter');
             });
         }
-        });
+        });*/
 
 
     </script>
