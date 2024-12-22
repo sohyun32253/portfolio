@@ -457,8 +457,8 @@ body {
 }
 
 .site_cont_03 .introduce_cont{
-    left: 30px;
-    top: 65px;
+    left: 40px;
+    top: 55px;
 }
 
 .site_to_go{
@@ -527,11 +527,6 @@ body {
     background: #d44861;
     display: flex;
     justify-content: flex-end;
-}
-
-.site_cont_03 .introduce_cont{
-    bottom: 45px;
-    left: 25px;
 }
 
 .gongcha{
